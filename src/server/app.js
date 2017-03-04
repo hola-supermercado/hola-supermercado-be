@@ -7,7 +7,7 @@ const helloWorld = require('./HelloWorld.js');
 const beacons = require('./beacons')
 
 // Configure the server
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 // Create a new express server
 const app = express();
