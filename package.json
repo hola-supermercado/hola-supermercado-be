@@ -1,0 +1,30 @@
+{
+  "name": "Hola-supermercado",
+  "version": "1.0.0",
+  "description": "Backend for the Hola Supermercado app",
+  "engines": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "start": "node ./src/server/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "helmet": "^3.2.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pg-promise": "^5.5.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-load-plugins": "^1.4.0",
+    "gulp-mocha": "^3.0.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-task-listing": "^1.0.1",
+    "sinon": "^1.17.6"
+  }
+}
