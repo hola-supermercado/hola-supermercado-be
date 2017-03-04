@@ -2,7 +2,7 @@
 
 const helloWorld = {
   helloWorld(req, res) {
-    res.send('Hello world');
+    res.send('Hello fs.code weekend!');
   }
 };
 

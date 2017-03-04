@@ -4,7 +4,7 @@ const express = require('express');
 const helmet = require('helmet');
 const bodyParser = require('body-parser')
 const helloWorld = require('./HelloWorld.js');
-//const users = require('./users');
+const beacons = require('./beacons')
 
 // Configure the server
 const port = process.env.port || 3000;
@@ -18,10 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 // Send a response to the index
 app.get('/', helloWorld.helloWorld);
 
-//app.use('/users', users);
-//
-//app.use('/login', express.static('src/client'));
-//require('./session').session(app);
+app.use('/beacons', beacons);
 
 // Start server on the specified port and binding host
 app.listen(port, () => {
